@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
     }
 
     public void getPosition(View v) {
-        Intent it = new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS);
+        Intent it = new Intent(this, MapsActivity.class);
         startActivity(it);
     }
 
